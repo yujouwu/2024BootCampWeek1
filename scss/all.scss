@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* * {
+    outline: 1px solid black;
+} */
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans", sans-serif;
+	line-height: 1.2;
+	color: #3B3B3B;
+}
+
+.container {
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+}
+
+a {
+	display: inline-block;
+	color: #3B3B3B;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 28px 0;
+
+	h1 {
+		margin-right: 318px;
+
+		img {
+			min-width: 90px;
+		}
+	}
+
+	.menu {
+		display: flex;
+		gap: 40px;
+
+		a {
+			text-decoration: none;
+			font-weight: 600;
+			color: #000000;
+			&:hover {
+				text-decoration: underline;
+				text-underline-offset: 4px;
+			}
+		}
+	}
+}
+
+.work {
+	padding: 120px 0;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	row-gap: 80px;
+	margin-bottom: 72px;
+
+	&-list {
+		img {
+			border: 1px solid #F1F1F1;
+			border-radius: 8px;
+			max-width: 636px;
+			margin-bottom: 16px;
+		}
+
+		h3 {
+			font-size: 28px;
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+
+		p {
+			color: #919191;
+			line-height: 1.5;
+			margin-bottom: 24px;
+		}
+	}
+
+	&-content {
+		padding: 0 16px;
+	}
+
+	.hashtag a {
+		background: #F1F1F1;
+		padding: 4px 12px;
+		text-decoration: none;
+		border-radius: 16px;
+		margin-right: 16px;
+
+		&:hover {
+			background: #3B3B3B;
+			color: white;
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	font-size: 24px;
+	line-height: 1.5;
+
+	a {
+		text-decoration: none;
+		padding: 2px 13px;
+		border-radius: 4px;
+
+		&:hover {
+			color: white;
+			background: #1E1E1E;
+		}
+	}
+
+	.active {
+		color: white;
+		background: #1E1E1E;
+	}
+}
