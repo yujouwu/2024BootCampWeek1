@@ -172,7 +172,7 @@ a {
   margin-right: 318px;
 }
 .navbar h1 img {
-  min-width: 90px;
+  max-width: 90px;
 }
 .navbar .menu {
   display: flex;
@@ -182,6 +182,7 @@ a {
   text-decoration: none;
   font-weight: 600;
   color: #000000;
+  padding: 4px 8px;
 }
 .navbar .menu a:hover {
   text-decoration: underline;

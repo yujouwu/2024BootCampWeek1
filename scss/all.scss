@@ -175,18 +175,18 @@ a {
 		margin-right: 318px;
 
 		img {
-			min-width: 90px;
+			max-width: 90px;
 		}
 	}
 
 	.menu {
 		display: flex;
 		gap: 40px;
-
 		a {
 			text-decoration: none;
 			font-weight: 600;
 			color: #000000;
+			padding: 4px 8px;
 			&:hover {
 				text-decoration: underline;
 				text-underline-offset: 4px;
