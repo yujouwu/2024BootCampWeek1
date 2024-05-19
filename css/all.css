@@ -150,8 +150,9 @@ body {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 img {
@@ -161,6 +162,7 @@ img {
 a {
   display: block;
   color: #3B3B3B;
+  text-decoration: none;
 }
 
 .navbar {
@@ -179,7 +181,6 @@ a {
   gap: 40px;
 }
 .navbar .menu a {
-  text-decoration: none;
   font-weight: 600;
   color: #000000;
   padding: 4px 8px;
@@ -206,7 +207,7 @@ a {
   max-width: 636px;
   margin-bottom: 16px;
 }
-.card-list h3 {
+.card-list h2 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 8px;
@@ -219,10 +220,12 @@ a {
 .card-content {
   padding: 0 16px;
 }
+.card .hashtag {
+  display: flex;
+}
 .card .hashtag a {
   background: #F1F1F1;
   padding: 4px 12px;
-  text-decoration: none;
   border-radius: 16px;
   margin-right: 16px;
 }
@@ -239,7 +242,6 @@ a {
   line-height: 1.5;
 }
 .pagination a {
-  text-decoration: none;
   padding: 2px 13px;
   border-radius: 4px;
 }
